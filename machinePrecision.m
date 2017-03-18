@@ -1,9 +1,9 @@
-function [eps] = machineprecision() %Obliczanie dok?adno?ci maszynowej komputera
+function [eps] = machineprecision() %Obliczanie dokladnosci maszynowej komputera
     x = 1.0;
     rd = 1.0 + x;
     while (rd > 1.0)
-        eps = x;        %Ostatni x spelniaj?cy warunek petli, zapamietujemy w zmiennej eps
+        eps = x;        %Ostatni x spelniajacy warunek petli, zapamietujemy w zmiennej eps
         x = x/2;
-        rd = 1.0 + x;   %Je?li rd b?dzie równe 1, oznacza to, ?e ostani zapamietany x to dok?adno?? maszynowa
+        rd = 1.0 + x;   %Jesli rd bedzie rÃ³wne 1, oznacza to, ze ostani zapamietany x to dokladnosc maszynowa
     end
 end
