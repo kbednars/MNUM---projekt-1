@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1488893288 source:/home/mion/s/162/kbednars/Desktop/Probny/Proi 1/main.cpp
+	<iostream>
+	"rejestr.h"
+
+1488894050 /home/mion/s/162/kbednars/Desktop/Probny/Proi 1/rejestr.h
+	<iostream>
+	<math.h>
+
+1490047210 source:c:\users\krwy\desktop\programowanie\proi 1\main.cpp
+	<iostream>
+	"rejestr.h"
+
+1490047227 c:\users\krwy\desktop\programowanie\proi 1\rejestr.h
+	<iostream>
+	<math.h>
+	<cstdlib>
+
+1490702112 source:c:\users\krwy\desktop\programowanie\proi 1 ver1.2\main.cpp
+	<string>
+	<iostream>
+	"rejestr.h"
+
+1490704567 c:\users\krwy\desktop\programowanie\proi 1 ver1.2\rejestr.h
+	<iostream>
+	<math.h>
+	<cstdlib>
+

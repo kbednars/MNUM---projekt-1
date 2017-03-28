@@ -1,0 +1,58 @@
+/**
+* Name: rejestr.h
+* autor: Krzysztof Bednarski
+* wersja 0.1 6/03/2017
+*/
+
+#ifndef REJESTR_H_INCLUDED
+#define REJESTR_H_INCLUDED
+
+#include<iostream>
+#include<math.h>
+
+class rejestr
+{
+private:
+    static const int n=10;
+    int bity[n];
+    int i;
+public:
+    void pobierz();
+    void zamien();
+};
+
+void rejestr::pobierz()
+{
+    std::cout << "Wprowadz liczbe do rejestru"<<std::endl;
+    std::cin >> i;
+
+    #if DEBUG
+    std::cout << i <<std::endl;
+    #endif
+
+};
+
+void rejestr::zamien()
+{
+    int pom, x, k;
+    x=i;
+    for(k=n; k>0; k--)
+    {
+        pom=x/pow(2,k-1);
+
+        #if DEBUG
+        std::cout<<pom<<std::endl;
+        #endif
+
+        bity[k-1]=pom;
+        if(pom==1) x=x-pow(2,k-1);
+    }
+
+    #if DEBUG
+    for(k=n; k>0; k--)
+    {
+        std::cout<<bity[k-1];
+    }
+    #endif
+}
+#endif // REJESTR_H_INCLUDED
